@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: peer1
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:2222/eureka/
+
+security:
+  basic:
+    enable: true
+  user:
+    name: user
+    password: 31dffa94-ea2b-4fd9-a8ce-cd82278f531b
+
+server:
+  port: 1111
